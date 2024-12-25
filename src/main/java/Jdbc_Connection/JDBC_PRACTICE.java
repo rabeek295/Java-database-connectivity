@@ -9,9 +9,10 @@ package Jdbc_Connection;
 // 7. Close the connections
 
 // Execute methods
-    //1.if DDL use-> execute() -> Return type = boolean
-    //2.if DML use-> executeUpdate() -> Return type = ResultSet
-    //3.if DQL use-> executeQuery() -> Return type = ClassType
+//if DDL use-> execute() -> Return type = boolean
+//if DML use-> executeUpdate() -> Return type = ResultSet
+//if DQL use-> executeQuery() -> Return type = ClassType
+//These all are the important execute methods
 
 //1
 import java.sql.*;
@@ -19,23 +20,24 @@ import java.sql.*;
 public class JDBC_PRACTICE {
 
 	public static void main(String[] args) throws Exception {
-		
-	   //2
+
+		// 2
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		
-		//3
+
+		// 3
 		Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/alvin", "root", "root");
-		//4
+		
+		// 4
 		PreparedStatement statement = connection.prepareStatement("insert into rabeek values(2, 'monstor')");
-		//5
-		 boolean result=statement.execute();
-		//6
-		 System.out.println(result);
-		//
-		 connection.close();
 		
+		// 5
+		boolean result = statement.execute();
 		
+		// 6
+		System.out.println(result);
 		
-		
+		// 7
+		connection.close();
+
 	}
 }
