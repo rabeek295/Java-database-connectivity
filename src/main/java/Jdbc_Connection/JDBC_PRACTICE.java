@@ -7,10 +7,11 @@ package Jdbc_Connection;
 // 5. Execute the Query
 // 6. Process the result
 // 7. Close the connection
-// excute methods
-    //1.if DDL -> execute()
-    //2.if DML -> executeUpdate()
-    //3.if DQL -> executeQuery() 
+
+// Excute methods
+    //1.if DDL use-> execute() -> Retrun type = boolean
+    //2.if DML use-> executeUpdate() -> Return type = ResultSet
+    //3.if DQL use-> executeQuery() -> Return type = ClassType
 
 //1
 import java.sql.*;
