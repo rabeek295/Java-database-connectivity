@@ -6,7 +6,7 @@ package Jdbc_Connection;
 // 4. Create a Statement
 // 5. Execute the Query
 // 6. Process the result
-// 7. Close the connection
+// 7. Close the connections
 
 // Execute methods
     //1.if DDL use-> execute() -> Return type = boolean
